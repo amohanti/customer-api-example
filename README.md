@@ -7,24 +7,29 @@
 
 *Resource: Customers*
 
-Operations: 
+*Operations: 
 1. Get a single/all customers (GET) 
 2. Create a new customer (POST) 
 3. Update a customer (PATCH/PUT) 
-4. Delete a customer (DELETE) 
+4. Delete a customer (DELETE) *
 
 *Attributes: First Name, Last Name, Addresses*
 
 *Relationships: Orders API, Products API*
 
-Use Cases: 
+*Use Cases: 
 1. Periodic 5 minute consumption of API and consumer maintains a copy of all customers obtained from provider 
 2. Mobile App uses API to retrieve and update customer details 
-3. Simple Extension of API to support future resources such as Products and Orders
+3. Simple Extension of API to support future resources such as Products and Orders*
 
 ## General Notes/Comments
 
-**Test3**
+**1. Main API file is customer-api-example.raml where resource is customers**
+
+**2. Secondary API files are order-api-example.raml where resource is orders and product-api-example where resource is products**
+
+**3. The customer API has the ability to retrieve a single customer by ID or all customers **
+
 
 ## Use Case 1: Comments
 
