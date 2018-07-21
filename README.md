@@ -43,11 +43,21 @@
 
 **6. HTTP status codes common to GET, POST, PUT/PATCH and DELETE are 401: Unauthorized, 500: Internal Server Error and 504: Gateway Timeout**
 
-**8. HTTP status code common to /{id}: GET, PUT/PATCH and DELETE is 404: Not Found**
+**7. HTTP status code common to /{id}: GET, PUT/PATCH and DELETE is 404: Not Found**
 
-**7. HTTP status codes specific to GET is 200: Success/Ok and specific to POST is 201: Created**
+**8. HTTP status code specific to GET is 200: Success/Ok and specific to POST is 201: Created**
 
 ## Use Case 1: Comments
+
+**1. Consumer gets all customers from API, which has Header with etag and lastmodified timestamp**
+
+**2. Consumer stores the customer record with the retrieved timestamp**
+
+**3. Consumer sleeps for 5 minutes**
+
+**4. Consumer gets all customers from API, which has Header with etag and lastmodified timestamp**
+
+**5. Consumer validates customers against its stored values using ID and lastmodified timestamp**
 
 ## Use Case 2: Comments
 
