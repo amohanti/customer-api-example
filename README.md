@@ -39,6 +39,13 @@
 
 **4. The customer API has the ability to create a single customer and return the ID as well as update/delete customer by ID**
 
+**5. The customer attributes used in the API are First Name, Last Name and Addresses which is a collection of multiple addresses that a customer can have e.g. primary and secondary address**
+
+**6. HTTP status codes common to GET, POST, PUT/PATCH and DELETE are 401: Unauthorized, 500: Internal Server Error and 504: Gateway Timeout**
+
+**8. HTTP status code common to /{id}: GET, PUT/PATCH and DELETE is 404: Not Found**
+
+**7. HTTP status codes specific to GET is 200: Success/Ok and specific to POST is 201: Created**
 
 ## Use Case 1: Comments
 
