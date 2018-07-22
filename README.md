@@ -71,6 +71,8 @@
 
 **4. Patch is a more network efficient way to update as compared to Put**
 
+**5. The use of AppID gives reusability in case of multiple Mobile Apps connecting to the same API**
+
 ## Use Case 3: Comments
 
 **1. Orders and Products have been designed as two different APIs**
