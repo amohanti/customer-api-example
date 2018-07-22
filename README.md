@@ -47,6 +47,8 @@
 
 **8. HTTP status code specific to GET is 200: Success/Ok and specific to POST is 201: Created**
 
+**9. The customers API design can be made even simpler and better by recognizing similar patterns and eliminating code redundancy by implementing Reource Types and Traits. E.g. Responses of 401, 500 and 504 can easily be represented as traits**
+
 ## Use Case 1: Comments
 
 **1. Consumer gets all customers from API, which has Header with etag and lastmodified timestamp**
