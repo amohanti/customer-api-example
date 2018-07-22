@@ -65,7 +65,7 @@
 
 **1. For the mobile App to retrive a particular customer from the API, it needs to provide an App ID, CSR/User ID and Customer ID to the API**
 
-**2. The API uses queryParams of App ID and User ID to return a response back to the mobile App**
+**2. The API uses queryParameters of App ID and User ID to return a response back to the mobile App**
 
 **3. The mobile App uses customer ID and PATCH method to update the customer details back into the API**
 
