@@ -61,4 +61,24 @@
 
 ## Use Case 2: Comments
 
+**1. For the mobile App to retrive a particular customer from the API, it needs to provide an App ID, CSR/User ID and Customer ID to the API**
+
+**2. The API uses queryParams of App ID and User ID to return a response back to the mobile App**
+
+**3. The mobile App uses customer ID and PATCH method to update the customer details back into the API**
+
+**4. Patch is a more network efficient way to update as compared to Put**
+
 ## Use Case 3: Comments
+
+**1. Orders and Products have been designed as two different APIs**
+
+**2. Orders is included as a sub-resource under Customers**
+
+**3. lineItems is a complex type under Orders, where one order can have multiple line items**
+
+**4. Product is again included as a sub-resource under lineItems where each line item has one product associated**
+
+**5. This design caters for the use case to make the Customers API easily extendable to include Orders and Products**
+
+
