@@ -89,7 +89,7 @@
 
 ## Use Case 2: Comments
 
-**1. For the mobile App to retrive a particular customer from the API, it needs to provide an App ID, CSR/User ID and Customer ID to the API**
+**1. For the mobile App to retrieve a particular customer from the API, it needs to provide an App ID, CSR/User ID and Customer ID to the API**
 
 **2. The API uses queryParameters of App ID and User ID to return a response back to the mobile App**
 
@@ -101,16 +101,16 @@
 
 ## Use Case 3: Comments
 
-**1. Orders and LineItems have been designed as two different resources under the customer API**
+**1. Orders and LineItems have been designed as two separate resources under the customer API**
 
 **2. Orders is included as a sub-resource under Customers to be able to find orders by customers**
 
 **3. Orders is also included as a main resource to be able to find orders without knowing customer number**
 
-**4. lineitems is included as sub-resource under Orders, where one order can have multiple line items**
+**4. Lineitems is included as sub-resource under Orders, where one order can have multiple line items**
 
-**4. lineitems has the attributes lineitemID, productID and description**
+**4. Lineitems has the attributes lineitemID, productID and description**
 
-**5. This design caters for the use case to make the Customers API easily extendable to include Orders and Products**
+**5. This design allows a simple extension in the Customers API, to include Orders and Products**
 
 
