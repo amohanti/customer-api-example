@@ -61,7 +61,7 @@
 
 **5. Consumer validates customers against its stored values using etag**
 
-**6. Consumer can also get a particular customer by ID and use etag (its stored value) in queryParameters, where API can match the etag sent in the Request with the calculated value on its side and simply return HTTP 304: Not Modified as a response**
+**6. Consumer can also get a particular customer by ID and use etag with condition 'If-Not-Match', where API can match the etag sent in the Request with the calculated value on its side and simply return HTTP 304: Not Modified as a response**
 
 ## Use Case 2: Comments
 
