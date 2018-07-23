@@ -49,6 +49,8 @@
 
 *Get all orders (without knowing the customer): GET http://customer-example.com/api/v1/orders*
 
+*Create new lineitem for order ORD002: POST http://customer-example.com/api/v1/orders/ORD002/lineitems*
+
 *Get all lineitems/products for order ORD001 (without knowing the customer): GET http://customer-example.com/api/v1/orders/ORD001/lineitems*
 
 ## General Notes/Comments
