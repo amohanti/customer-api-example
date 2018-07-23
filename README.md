@@ -47,7 +47,9 @@
 
 *Get all lineitems/products for order ORD001 and customer 1234 : GET http://customer-example.com/api/v1/customers/1234/orders/ORD001/lineitems*
 
-*Get all lineitems/products for order ORD001 (without knwing the customer): GET http://customer-example.com/api/v1/orders/ORD001/lineitems*
+*Get all orders (without knowing the customer): GET http://customer-example.com/api/v1/orders*
+
+*Get all lineitems/products for order ORD001 (without knowing the customer): GET http://customer-example.com/api/v1/orders/ORD001/lineitems*
 
 ## General Notes/Comments
 
