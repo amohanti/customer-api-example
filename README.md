@@ -61,6 +61,8 @@
 
 **5. Consumer validates customers against its stored values using ID and lastmodified timestamp**
 
+**6. Consumer can also get a particular customer by ID and use etag/lastmodified in queryParameters to API, where API can match the etag/lastmodified in the Request with the calculated value on its side and simply return HTTP 304: Not Modified as a response**
+
 ## Use Case 2: Comments
 
 **1. For the mobile App to retrive a particular customer from the API, it needs to provide an App ID, CSR/User ID and Customer ID to the API**
