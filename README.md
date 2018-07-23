@@ -29,11 +29,31 @@
 
 *3. Simple Extension of API to support future resources such as Products and Orders*
 
+## Sample URIs/Methods
+
+*Create new customer 1234: POST http://customer-example.com/api/v1/customers*
+
+*Get all customers: GET http://customer-example.com/api/v1/customers*
+
+*Get customer 1234: GET http://customer-example.com/api/v1/customers/1234*
+
+*Update customer 1234: PUT or PATCH http://customer-example.com/api/v1/customers/1234*
+
+*Delete customer 1234: DELETE http://customer-example.com/api/v1/customers/1234*
+
+*Create new order for customer 1234: POST http://customer-example.com/api/v1/customers/1234/orders*
+
+*Get all orders for customer 1234: GET http://customer-example.com/api/v1/customers/1234/orders*
+
+*Get all lineitems/products for order ORD001 and customer 1234 : GET http://customer-example.com/api/v1/customers/1234/orders/ORD001/lineitems*
+
+*Get all lineitems/products for order ORD001 (without knwing the customer): GET http://customer-example.com/api/v1/orders/ORD001/lineitems*
+
 ## General Notes/Comments
 
 **1. Main API file is customer-api-example.raml where resource is customers**
 
-**2. Secondary API files are order-api-example.raml where resource is orders and product-api-example where resource is products**
+**2. The API file also includes orders and products as resources, keeping in mind future extension for the API**
 
 **3. The customer API has the ability to retrieve a single customer by ID or all customers**
 
@@ -77,13 +97,15 @@
 
 ## Use Case 3: Comments
 
-**1. Orders and Products have been designed as two different APIs**
+**1. Orders and LineItems have been designed as two different resources under the customer API**
 
-**2. Orders is included as a sub-resource under Customers**
+**2. Orders is included as a sub-resource under Customers to be able to find orders by customers**
 
-**3. lineItems is a complex type under Orders, where one order can have multiple line items**
+**3. Orders is also included as a main resource to be able to find orders without knowing customer number**
 
-**4. Product is again included as a sub-resource under lineItems where each line item has one product associated**
+**4. lineItems is included as sub-resource under Orders, where one order can have multiple line items**
+
+**4. Product is a complex-type under lineItems where each line item has one product associated**
 
 **5. This design caters for the use case to make the Customers API easily extendable to include Orders and Products**
 
