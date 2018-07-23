@@ -103,9 +103,9 @@
 
 **3. Orders is also included as a main resource to be able to find orders without knowing customer number**
 
-**4. lineItems is included as sub-resource under Orders, where one order can have multiple line items**
+**4. lineitems is included as sub-resource under Orders, where one order can have multiple line items**
 
-**4. Product is a complex-type under lineItems where each line item has one product associated**
+**4. lineitems has the attributes lineitemID, productID and description**
 
 **5. This design caters for the use case to make the Customers API easily extendable to include Orders and Products**
 
